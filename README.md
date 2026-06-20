@@ -1,0 +1,1 @@
+# booking_roomify.trial
