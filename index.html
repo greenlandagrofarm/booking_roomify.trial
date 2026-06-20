@@ -1,6 +1,41 @@
-<iframe 
-  src="https://script.google.com/macros/s/AKfycbzlWU05SPukMONyFJy545W9dbc-VlQtZxHuzOHZLl1_iAoh2xBbQ57cDCSIRivbij9TLQ/exec?page=pesan" 
-  width="100%" 
-  style="border: none; min-height: 85vh; width: 100%; display: block; border-radius: 16px; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);"
-  allow="geolocation; microphone; camera">
-</iframe>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Booking Online - Roomify</title>
+    <style>
+        /* Menghilangkan margin bawaan agar iframe mepet rapi */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f8fafc;
+            overflow-x: hidden;
+        }
+        /* Kontainer khusus pembungkus iframe responsif mobile */
+        .iframe-container {
+            width: 100%;
+            height: 100vh;
+            -webkit-overflow-scrolling: touch; /* Membuat scroll di iPhone/iOS jadi super mulus */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="iframe-container">
+        <iframe 
+            src="https://script.google.com/macros/s/AKfycbzlWU05SPukMONyFJy545W9dbc-VlQtZxHuzOHZLl1_iAoh2xBbQ57cDCSIRivbij9TLQ/exec?page=pesan" 
+            allow="geolocation; microphone; camera">
+        </iframe>
+    </div>
+
+</body>
+</html>
